@@ -2,7 +2,45 @@
 <html>
 
 <head>
+    <!-- Character Set -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
+    <title>QR Code Generator | Free Online QR Code Maker</title>
+
+    <!-- Meta Description -->
+    <meta name="description"
+        content="Generate QR codes instantly with our free online QR Code Generator. Simply enter your text or URL and download or copy your custom QR code.">
+
+    <!-- Meta Keywords (optional) -->
+    <meta name="keywords"
+        content="QR Code Generator, free QR code, online QR code maker, generate QR code, download QR code, copy QR code">
+
+    <!-- Robots Directive -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://example.com/qr-code-generator">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="QR Code Generator | Free Online QR Code Maker">
+    <meta property="og:description"
+        content="Generate QR codes instantly with our free online QR Code Generator. Simply enter your text or URL and download or copy your custom QR code.">
+    <meta property="og:image" content="https://example.com/qr-code-preview.jpg">
+    <meta property="og:url" content="https://example.com/qr-code-generator">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="QR Code Generator | Free Online QR Code Maker">
+    <meta name="twitter:description"
+        content="Generate QR codes instantly with our free online QR Code Generator. Simply enter your text or URL and download or copy your custom QR code.">
+    <meta name="twitter:image" content="https://example.com/qr-code-preview.jpg">
+
+    <!-- Structured Data with JSON-LD -->
     <title>
         QR-Code Generator
     </title>
@@ -17,10 +55,19 @@
         <input id="qr-code-input" type="text" placeholder="Enter Your Text or URL">
         <div id="qr-code-box">
             <img id="qr-code-img" src="" alt="">
+            <button id="copy-clipboard-button" onclick="copyToClipboard()">
+                Copy To ClipBoard
+            </button>
+            <button id="download-button" onclick="download()">
+                Download
+            </button>
         </div>
         <button id="qr-code-button" onclick="generateQrCode()">
             Generate QR Code
         </button>
+        <p id="credits">
+            Created by Dharshan Raj P A
+        </p>
     </div>
 </body>
 
